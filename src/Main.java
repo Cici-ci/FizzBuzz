@@ -3,8 +3,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        int number=scanner.nextInt();
-        judgeScanner(number);
+
+        while (true) {
+           int number=scanner.nextInt();
+           if(number==0)
+               break;
+               judgeScanner(number);
+
+        }
 
     }
     public  static  void judgeScanner(int number){
